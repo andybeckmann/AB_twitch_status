@@ -1,0 +1,15 @@
+/**
+ * AB_twitch_status
+ * version 1.0.0
+ */
+
+@use 'AB_colors' as colors;
+
+#twitch-stream-status {  
+	color: colors.$red;
+	text-transform: uppercase;
+
+	&.live { 
+		color: colors.$green;
+	}
+}
