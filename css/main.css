@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  padding: 20px 35px;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/**
+ * AB_colors
+ * version: 1.0.0
+ */
+/**
+ * AB_twitch_status
+ * version 1.0.0
+ */
+#twitch-stream-status {
+  color: #d9534f;
+  text-transform: uppercase;
+}
+#twitch-stream-status.live {
+  color: #2ecc40;
+}
