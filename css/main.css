@@ -17,10 +17,31 @@ body {
  * AB_twitch_status
  * version 1.0.0
  */
-#twitch-stream-status {
-  color: #d9534f;
-  text-transform: uppercase;
+.AB_twitch_status {
+  background: linear-gradient(45deg, #eee, #fff);
+  border: 1px solid #eee;
+  display: inline-block;
+  padding: 16px 16px 32px;
 }
-#twitch-stream-status.live {
-  color: #2ecc40;
+.AB_twitch_status .twitch-logo {
+  width: 50px;
+  margin-bottom: -25px;
+  margin-right: 10px;
+  fill: #9147ff;
+}
+.AB_twitch_status .twitch-url {
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 5px;
+}
+.AB_twitch_status #twitch-stream-status {
+  color: #fff;
+  background: #d9534f;
+  text-transform: uppercase;
+  border-radius: 25px;
+  padding: 8px 15px;
+  font-weight: bold;
+}
+.AB_twitch_status #twitch-stream-status.live {
+  background: #2ecc40;
 }

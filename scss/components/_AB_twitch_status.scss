@@ -5,11 +5,37 @@
 
 @use 'AB_colors' as colors;
 
-#twitch-stream-status {  
-	color: colors.$red;
-	text-transform: uppercase;
+.AB_twitch_status {
 
-	&.live { 
-		color: colors.$green;
+	background: linear-gradient(45deg, #eee, #fff);
+	border: 1px solid #eee;
+	display: inline-block;
+	padding: 16px 16px 32px;
+
+	.twitch-logo {
+		width: 50px;
+	    margin-bottom: -25px;
+	    margin-right: 10px;
+	    fill: #9147ff;
 	}
+
+	.twitch-url {
+		font-weight: bold;
+		font-size: 18px;
+		margin-right: 5px;
+	}
+
+	#twitch-stream-status {  
+		color: #fff;
+	    background: #d9534f;
+	    text-transform: uppercase;
+	    border-radius: 25px;
+	    padding: 8px 15px;
+	    font-weight: bold;
+
+		&.live { 
+			background: colors.$green;
+		}
+	}
+
 }
